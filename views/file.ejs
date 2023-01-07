@@ -1,0 +1,331 @@
+<%- include('./partials/header2.ejs') %>
+   <!-- ==============================================
+	 Dashboard Section
+	 =============================================== -->
+     <section class="dashboard section-padding">
+		<div class="container">
+		 <div class="row">
+		 
+		  <div class="col-sm-4 col-md-3">
+		  
+			<ul class="sidebar-menu" data-widget="tree">
+			  <li class="active">
+				<a href="/dashboard">
+				  <i class="fa fa-life-ring"></i> <span>Dashboard</span>
+				</a>
+			  </li>
+			  <li>
+				<a href="/contract">
+				  <i class="fa fa-align-left"></i> <span>Contracts</span>
+				</a>
+			  </li>
+			  <li class="treeview">
+				<a href="/#">
+				  <i class="fa fa-files-o"></i> <span>Jobs</span>
+				  <span class="pull-right-container">
+					<i class="fa fa-angle-left pull-right"></i>
+				  </span>
+				</a>
+				<ul class="treeview-menu">
+				  <li><a href="jobsposted"><i class="fa fa-circle-o"></i> Jobs Posted</a></li>
+				  <li><a href="addjob"><i class="fa fa-circle-o"></i> Add a Job</a></li>
+				</ul>
+			  </li>
+			  <li>
+				<a href="/offers">
+				  <i class="fa fa-file"></i> <span>Offers</span>
+				</a>
+			  </li>
+			  <li>
+				<a href="/messages">
+				  <i class="fa fa-envelope"></i> <span>Messages</span>
+				  <span class="pull-right-container">
+					<small class="label pull-right bg-green">4</small>
+				  </span>
+				</a>
+			  </li>
+		   </ul>		
+		  
+			<ul class="sidebar-menu" data-widget="tree">
+			  <li class="treeview">
+				<a href="/">
+				  <i class="fa fa-exchange"></i> <span>Wallet</span>
+				  <span class="pull-right-container">
+					<i class="fa fa-angle-left pull-right"></i>
+				  </span>
+				</a>
+				<ul class="treeview-menu">
+				  <li><a href="deposits"><i class="fa fa-circle-o"></i> Deposits</a></li>
+				  <li><a href="withdrawals"><i class="fa fa-circle-o"></i> Withdrawals</a></li>
+				</ul>
+			  </li>
+		   </ul>	
+		   
+			<ul class="sidebar-menu" data-widget="tree">
+			  <li>
+				<a href="/editprofile">
+				  <i class="fa fa-user"></i> <span>Edit Profile</span>
+				</a>
+			  </li>
+			  <li>
+				<a href="/profileimage">
+				  <i class="fa fa-image"></i> <span>Change Profile Image</span>
+				</a>
+			  </li>
+			  <li>
+				<a href="/password">
+				  <i class="fa fa-lock"></i> <span>Change Password</span>
+				</a>
+			  </li>
+		   </ul>			 
+						 
+		  </div>
+		
+		  <div class="col-sm-8 col-md-9">
+			
+			<div class="pro-nav text-center">
+			 <ul class="nav pro-nav-tabs nav-tabs-dashed">
+			  <li><a href="/workroom">Overview & Discussions</a></li>
+			  <li><a href="/milestone">Milestones</a></li>
+			  <li><a href="/task">Tasks</a></li>
+			  <li class="active"><a href="/file">Files</a></li>
+			  <li><a href="/payment">Payments</a></li>
+			  <li><a href="/rate">Rate the Freelancer</a></li>
+				  
+			 </ul>	
+			</div><!-- /.prop-info -->
+
+		  <div class="button-box">
+			 <a href="#addm" class="kafe-btn kafe-btn-mint-small" data-toggle="modal">Add File</a>
+          </div><!-- /.prop-info -->		  
+
+			
+              <div class="box">
+                <div class="box-header">
+                  <h3 class="box-title">Files</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                 <div class="table-responsive">
+                  <table id="example1" class="table table-bordered table-hover">
+                    <thead>
+                      <tr>
+                        <th>Preview</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Type</th>
+                        <th>Size</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><i class="fa fa-file-pdf-o fa-5x"></i></td>
+                        <td>PDF File</td>
+                        <td>This is a PDF file you requested for this project</td>
+                        <td><span class="label label-mint">pdf</span></td>
+                        <td>43 KB</td>
+                        <td>
+						 <a href="#" class="btn btn-success btn-xs" data-toggle="tooltip" title="Download"><span class="fa fa-download"></span></a>
+						 <a href="#" class="btn btn-success btn-xs" data-toggle="tooltip" title="Edit"><span class="fa fa-edit"></span></a>
+						 <a href="#" class="btn btn-danger btn-xs" data-toggle="tooltip" title="Delete"><span class="fa fa-trash"></span></a></td>
+                      </tr>
+                      <tr>
+                        <td><i class="fa fa-file-image-o fa-5x"></i></td>
+                        <td>Image File</td>
+                        <td>This is a Image file you requested for this project</td>
+                        <td><span class="label label-mint">img</span></td>
+                        <td>110 KB</td>
+                        <td>
+						 <a href="#" class="btn btn-success btn-xs" data-toggle="tooltip" title="Download"><span class="fa fa-download"></span></a>
+						 <a href="#" class="btn btn-success btn-xs" data-toggle="tooltip" title="Edit"><span class="fa fa-edit"></span></a>
+						 <a href="#" class="btn btn-danger btn-xs" data-toggle="tooltip" title="Delete"><span class="fa fa-trash"></span></a></td>
+                      </tr>
+                      <tr>
+                        <td><i class="fa fa-file-word-o fa-5x"></i></td>
+                        <td>Word Document</td>
+                        <td>This is a Word document you requested for this project</td>
+                        <td><span class="label label-mint">word</span></td>
+                        <td>240 KB</td>
+                        <td>
+						 <a href="#" class="btn btn-success btn-xs" data-toggle="tooltip" title="Download"><span class="fa fa-download"></span></a>
+						 <a href="#" class="btn btn-success btn-xs" data-toggle="tooltip" title="Edit"><span class="fa fa-edit"></span></a>
+						 <a href="#" class="btn btn-danger btn-xs" data-toggle="tooltip" title="Delete"><span class="fa fa-trash"></span></a></td>
+                      </tr>
+                      <tr>
+                        <td><i class="fa fa-file-zip-o fa-5x"></i></td>
+                        <td>Zip File</td>
+                        <td>This is the Zip for the whole project.</td>
+                        <td><span class="label label-mint">zip</span></td>
+                        <td>840 KB</td>
+                        <td>
+						 <a href="#" class="btn btn-success btn-xs" data-toggle="tooltip" title="Download"><span class="fa fa-download"></span></a>
+						 <a href="#" class="btn btn-success btn-xs" data-toggle="tooltip" title="Edit"><span class="fa fa-edit"></span></a>
+						 <a href="#" class="btn btn-danger btn-xs" data-toggle="tooltip" title="Delete"><span class="fa fa-trash"></span></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                 </div><!-- /.table-responsive -->
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->				
+			
+		
+		
+	    </div><!-- /.col-md-9 -->	
+	        </div><!-- /.row -->
+	    </div><!-- /.container -->
+	</section>	
+
+
+	      <!-- Modal HTML -->
+	      <div id="addm" class="modal fade">
+	       <div class="modal-dialog">
+	        <div class="modal-content">
+	         <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	          <h4 class="modal-title">Add File</h4>
+	         </div>
+	         <div class="modal-body">
+              <form method="post" id="addform"> 
+	         	
+              <div class="form-group">	
+			    <label>Title</label>
+                <input type="text" id="name" class="form-control" placeholder="Title" value=""/>
+              </div>       
+               
+              <div class="form-group">	
+			   <label>Description</label>
+               <textarea id="description" class="form-control" rows="5" placeholder="Description"></textarea>
+              </div>      
+              
+				<input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple />
+				<label for="file-1" class="label-file"> <span>Choose a file&hellip;</span></label>
+			  <br/>
+
+	         
+             <div class="modal-footer">
+              <input type="hidden" name="token" value="d1f6244156c91a1d77d05e263902a827" />
+              <button type="button" class="kafe-btn kafe-btn-default-small" data-dismiss="modal">Close</button>
+              <button onclick="addmilestone()"  class="kafe-btn kafe-btn-mint-small">Submit</button>
+             </div>
+             
+             </form> 
+             </div>
+             
+	        </div>
+	       </div>
+	      </div>		
+	 
+	 
+         <!-- ==============================================
+	 Footer Section
+	 =============================================== -->
+     <div class="footer">
+		<div class="container">
+		 <div class="row">
+		
+		  <div class="col-md-4 col-sm-6 text-left">
+		   <h4 class="heading no-margin">About Us</h4>
+		   <hr class="mint">
+		   <p>CodeNcake.</p>
+		   <p>We work hard to build a great product that is beautifully designed, simple to use, user friendly with great focus on user experience and customer service.</p>
+		  </div>
+		 
+		  <div class="col-md-2 col-sm-6 text-left">
+		   <h4 class="heading no-margin">Company</h4>
+		   <hr class="mint">
+		   <div class ="no-padding">
+			<a href="/index">Home</a>
+			<a href="/about">About</a>
+			<a href="/jobs">Jobs</a>
+			<a href="/services">Developers</a>
+			<a href="/how-1">How it works</a>
+			<a href="/contact">Contact</a>		 
+		   </div>
+		  </div><!-- /.col-md-2 -->	
+		  
+		  <div class="col-md-3 col-sm-6 text-left">
+		   <h4 class="heading no-margin">Other Services</h4>
+		   <hr class="mint">
+		   <div class="no-padding">
+			<a href="/#">Privacy Policy</a>
+			<a href="/#">Terms of Use</a>
+			<a href="/faq">FAQ</a>		 
+		   </div>
+		  </div><!-- /.col-md-3 -->	
+		  
+		  <div class="col-md-3 col-sm-6 text-left">
+		  <h4 class="heading no-margin">Browse</h4>
+		  <hr class="mint">
+		   </div><!-- /.col-md-3 -->
+		   
+		  </div><!-- /.row -->
+		 <div class="clearfix"></div>
+		</div><!-- /.container-->
+	   </div><!-- /.footer -->			
+	   
+	   <!-- ==============================================
+	   Made Section
+	   =============================================== -->
+	   <section class="made">
+		<div class="container">
+		 <div class="row">
+		  <div class="col-lg-10 col-lg-offset-1 text-center">
+		   <h4 class="made-with-love">CodeNCake</h4>
+		  </div>
+		  <!-- /.col-lg-10 -->
+		 </div><!-- /.row -->
+		</div><!-- /.container -->
+	   </section><!-- /.made -->
+	   
+	   <!-- ==============================================
+	   Bottom Footer Section
+	   =============================================== -->	
+	   <footer id="main-footer" class="main-footer">
+		<div class="container">
+		 <div class="row">
+		 
+		  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+		   <ul class="social-links">
+			<li class="revealOnScroll" data-animation="slideInLeft" data-timeout="800"><a href="/#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+			<li class="revealOnScroll" data-animation="slideInLeft" data-timeout="600"><a href="/#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+			<li class="revealOnScroll" data-animation="slideInLeft" data-timeout="400"><a href="/#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
+			<li class="revealOnScroll" data-animation="slideInLeft" data-timeout="200"><a href="/#link"><i class="fa fa-pinterest fa-fw"></i></a></li>
+			<li class="revealOnScroll" data-animation="slideInLeft"><a href="/#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+		   </ul>
+		  </div>
+		  <!-- /.col-sm-4 -->
+		  
+		  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 revealOnScroll" data-animation="bounceIn" data-timeout="200">
+		   <div class="img-responsive text-center">
+			<i class="fa fa-coffee logo"></i>		 </div><!-- End image-->
+		  </div>
+		  <!-- /.col-sm-4 -->
+		  
+		  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-right revealOnScroll" data-animation="slideInRight" data-timeout="200">
+		   <p>&copy;2016 The CodeNCake</p>
+		  </div>
+		  <!-- /.col-sm-4 -->
+				  
+		 </div><!-- /.row -->
+		</div><!-- /.container -->
+	   </footer><!-- /.footer -->  
+	   
+	   <a id="scrollup">Scroll</a>
+	 <!-- ==============================================
+	 Scripts
+	 =============================================== -->
+     <script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+    <!-- DATA TABES SCRIPT -->
+    <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="assets/plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $("#example1").dataTable();
+      });
+    </script>
+	<script src="assets/js/custom-file-input.js"></script>
+	<script src="assets/js/kafe.js"></script>
+
+  </body>
+</html>

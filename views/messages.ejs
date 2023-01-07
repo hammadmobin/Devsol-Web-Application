@@ -1,0 +1,440 @@
+<%- include('./partials/header2.ejs') %>
+      <!-- ==============================================
+	 Dashboard Section
+	 =============================================== -->
+     <section class="dashboard section-padding">
+	  <div class="container">
+	   <div class="row">
+	   
+	    <div class="col-sm-4 col-md-3">
+		
+		  <ul class="sidebar-menu" data-widget="tree">
+			<li class="active">
+			  <a href="/dashboard">
+				<i class="fa fa-life-ring"></i> <span>Dashboard</span>
+			  </a>
+			</li>
+			<li>
+			  <a href="/contract">
+				<i class="fa fa-align-left"></i> <span>Contracts</span>
+			  </a>
+			</li>
+			<li class="treeview">
+			  <a href="/#">
+				<i class="fa fa-files-o"></i> <span>Jobs</span>
+				<span class="pull-right-container">
+				  <i class="fa fa-angle-left pull-right"></i>
+				</span>
+			  </a>
+			  <ul class="treeview-menu">
+				<li><a href="jobsposted"><i class="fa fa-circle-o"></i> Jobs Posted</a></li>
+				<li><a href="addjob"><i class="fa fa-circle-o"></i> Add a Job</a></li>
+			  </ul>
+			</li>
+			<li>
+			  <a href="/offers">
+				<i class="fa fa-file"></i> <span>Offers</span>
+			  </a>
+			</li>
+			<li>
+			  <a href="/messages">
+				<i class="fa fa-envelope"></i> <span>Messages</span>
+				<span class="pull-right-container">
+				  <small class="label pull-right bg-green">4</small>
+				</span>
+			  </a>
+			</li>
+		 </ul>		
+		
+		  <ul class="sidebar-menu" data-widget="tree">
+			<li class="treeview">
+			  <a href="/">
+				<i class="fa fa-exchange"></i> <span>Wallet</span>
+				<span class="pull-right-container">
+				  <i class="fa fa-angle-left pull-right"></i>
+				</span>
+			  </a>
+			  <ul class="treeview-menu">
+				<li><a href="deposits"><i class="fa fa-circle-o"></i> Deposits</a></li>
+				<li><a href="withdrawals"><i class="fa fa-circle-o"></i> Withdrawals</a></li>
+			  </ul>
+			</li>
+		 </ul>	
+		 
+		  <ul class="sidebar-menu" data-widget="tree">
+			<li>
+			  <a href="/editprofile">
+				<i class="fa fa-user"></i> <span>Edit Profile</span>
+			  </a>
+			</li>
+			<li>
+			  <a href="/profileimage">
+				<i class="fa fa-image"></i> <span>Change Profile Image</span>
+			  </a>
+			</li>
+			<li>
+			  <a href="/password">
+				<i class="fa fa-lock"></i> <span>Change Password</span>
+			  </a>
+			</li>
+		 </ul>			 
+		       		
+	    </div>
+		
+	    <div class="col-sm-8 col-md-9">		  
+
+
+	   
+        <div class="messages-box">
+		 <div class="row">
+		  <div class="col-lg-4 col-md-12 no-pdd">
+		   <div class="messages-container">
+		   
+			<div class="message-header">
+			 <div class="message-title">
+			  <h4>Messages</h4>
+			 </div><!--/ message-title-->
+             <div class="search-area">  
+              <div class="input-field">
+               <input placeholder="Search" type="text">
+               <i class="fa fa-search"></i>
+              </div>
+             </div><!--/ search-area-->			 
+			</div><!--/ message-header-->
+								
+			<div class="messages-list">
+			  <ul>
+			   <li class="active">
+				<div class="user-message-details">
+				 <div class="user-message-img">
+				  <img src="assets/img/users/3.jpg" class="img-responsive img-circle" alt="">
+				  <span class="user-online"></span>
+				 </div>
+				 <div class="user-message-info">
+				  <h4>Anthony McCartney</h4>
+				  <p>Lorem ipsum dolor ...</p>
+				  <span class="time-posted">1:55 PM</span>
+			     </div><!--/ user-message-info -->
+				 <span class="message-notification">1</span>
+			    </div><!--/ user-message-details -->
+			   </li>
+			   <li>
+				<div class="user-message-details">
+				 <div class="user-message-img">
+				  <img src="assets/img/users/4.jpg" class="img-responsive img-circle" alt="">
+				 </div>
+				 <div class="user-message-info">
+				  <h4>Sean Coleman</h4>
+				  <p>Lorem ipsum dolor ...</p>
+				  <span class="time-posted">1:55 PM</span>
+			     </div><!--/ user-message-info -->
+			    </div><!--/ user-message-details -->
+			   </li>
+			   <li>
+				<div class="user-message-details">
+				 <div class="user-message-img">
+				  <img src="assets/img/users/5.jpg" class="img-responsive img-circle" alt="">
+				 </div>
+				 <div class="user-message-info">
+				  <h4>Vanessa Wells</h4>
+				  <p>Lorem ipsum dolor ...</p>
+				  <span class="time-posted">1:55 PM</span>
+			     </div><!--/ user-message-info -->
+			    </div><!--/ user-message-details -->
+			   </li>
+			   <li>
+				<div class="user-message-details">
+				 <div class="user-message-img">
+				  <img src="assets/img/users/6.jpg" class="img-responsive img-circle" alt="">
+				 </div>
+				 <div class="user-message-info">
+				  <h4>Clifford Graham</h4>
+				  <p>Lorem ipsum dolor ...</p>
+				  <span class="time-posted">1:55 PM</span>
+			     </div><!--/ user-message-info -->
+			    </div><!--/ user-message-details -->
+			   </li>
+			   <li>
+				<div class="user-message-details">
+				 <div class="user-message-img">
+				  <img src="assets/img/users/7.jpg" class="img-responsive img-circle" alt="">
+				 </div>
+				 <div class="user-message-info">
+				  <h4>Grace Karen</h4>
+				  <p>Lorem ipsum dolor ...</p>
+				  <span class="time-posted">1:55 PM</span>
+			     </div><!--/ user-message-info -->
+			    </div><!--/ user-message-details -->
+			   </li>
+			   <li>
+				<div class="user-message-details">
+				 <div class="user-message-img">
+				  <img src="assets/img/users/8.jpg" class="img-responsive img-circle" alt="">
+				 </div>
+				 <div class="user-message-info">
+				  <h4>Alex Grantte</h4>
+				  <p>Lorem ipsum dolor ...</p>
+				  <span class="time-posted">1:55 PM</span>
+			     </div><!--/ user-message-info -->
+			    </div><!--/ user-message-details -->
+			   </li>
+			   <li>
+				<div class="user-message-details">
+				 <div class="user-message-img">
+				  <img src="assets/img/users/9.jpg" class="img-responsive img-circle" alt="">
+				 </div>
+				 <div class="user-message-info">
+				  <h4>Anna Morgan</h4>
+				  <p>Lorem ipsum dolor ...</p>
+				  <span class="time-posted">1:55 PM</span>
+			     </div><!--/ user-message-info -->
+			    </div><!--/ user-message-details -->
+			   </li>
+			   <li>
+				<div class="user-message-details">
+				 <div class="user-message-img">
+				  <img src="assets/img/users/10.jpg" class="img-responsive img-circle" alt="">
+				 </div>
+				 <div class="user-message-info">
+				  <h4>Francis Long</h4>
+				  <p>Lorem ipsum dolor ...</p>
+				  <span class="time-posted">1:55 PM</span>
+			     </div><!--/ user-message-info -->
+			    </div><!--/ user-message-details -->
+			   </li>
+			   <li>
+				<div class="user-message-details">
+				 <div class="user-message-img">
+				  <img src="assets/img/users/11.jpg" class="img-responsive img-circle" alt="">
+				 </div>
+				 <div class="user-message-info">
+				  <h4>Eleanor Harper</h4>
+				  <p>Lorem ipsum dolor ...</p>
+				  <span class="time-posted">1:55 PM</span>
+			     </div><!--/ user-message-info -->
+			    </div><!--/ user-message-details -->
+			   </li>
+										
+			  </ul>
+			</div><!--/ messages-list -->
+			
+		   </div><!--/ messages-container-->
+		  </div><!--/ col-lg-4 -->
+		  
+		  <div class="col-lg-8 col-md-12 pd-right-none pd-left-none">
+		   <div class="conversation-box">
+		   
+			<div class="conversation-header">
+			 <div class="user-message-details">
+			  <div class="user-message-img">
+			   <img src="assets/img/users/3.jpg" class="img-responsive img-circle" alt="">
+			  </div>
+			  <div class="user-message-info">
+			   <h4>Anthony McCartney</h4>
+			   <p>Online</p>
+			  </div><!--/ user-message-info -->
+			 </div><!--/ user-message-details -->
+			</div><!--/ conversation-header -->
+			
+			<div class="conversation-container">
+
+			 <div class="convo-box pull-right">
+			  <div class="convo-area">
+			   <div class="convo-message">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor.</p>
+			   </div><!--/ convo-message-->
+			   <span>Sat, Aug 23, 1:08 PM</span>
+			  </div><!--/ convo-area -->
+			  <div class="convo-img">
+			   <img src="assets/img/users/2.jpg" alt="" class="img-responsive img-circle">
+			  </div><!--/ convo-img -->
+			 </div><!--/ convo-box -->
+
+			 <div class="convo-box convo-left">
+			  <div class="convo-area convo-left">
+			   <div class="convo-message">
+				<p>Cras ultricies ligula.</p>
+			   </div><!--/ convo-message-->
+			   <span>5 minutes ago</span>
+			  </div><!--/ convo-area -->
+			  <div class="convo-img">
+			   <img src="assets/img/users/3.jpg" alt="" class="img-responsive img-circle">
+			  </div><!--/ convo-img -->
+			 </div><!--/ convo-box -->
+
+			 <div class="convo-box pull-right">
+			  <div class="convo-area">
+			   <div class="convo-message">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor.</p>
+			   </div><!--/ convo-message-->
+			   <span>Sat, Aug 23, 1:08 PM</span>
+			  </div><!--/ convo-area -->
+			  <div class="convo-img">
+			   <img src="assets/img/users/2.jpg" alt="" class="img-responsive img-circle">
+			  </div><!--/ convo-img -->
+			 </div><!--/ convo-box -->
+
+			 <div class="convo-box convo-left">
+			  <div class="convo-area convo-left">
+			   <div class="convo-message">
+				<p>Lorem ipsum dolor sit amet</p>
+			   </div><!--/ convo-message-->
+			   <span>2 minutes ago</span>
+			  </div><!--/ convo-area -->
+			  <div class="convo-img">
+			   <img src="assets/img/users/3.jpg" alt="" class="img-responsive img-circle">
+			  </div><!--/ convo-img -->
+			 </div><!--/ convo-box -->
+
+			 <div class="convo-box pull-right">
+			  <div class="convo-area">
+			   <div class="convo-message">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor.</p>
+			   </div><!--/ convo-message-->
+			   <span>Sat, Aug 23, 1:08 PM</span>
+			  </div><!--/ convo-area -->
+			  <div class="convo-img">
+			   <img src="assets/img/users/2.jpg" alt="" class="img-responsive img-circle">
+			  </div><!--/ convo-img -->
+			 </div><!--/ convo-box -->
+
+			 <div class="convo-box convo-left">
+			  <div class="convo-area convo-left">
+			   <div class="convo-message">
+				<p>Typing...</p>
+			   </div><!--/ convo-message-->
+			   <span>2 minutes ago</span>
+			  </div><!--/ convo-area -->
+			  <div class="convo-img">
+			   <img src="assets/img/users/3.jpg" alt="" class="img-responsive img-circle">
+			  </div><!--/ convo-img -->
+			 </div><!--/ convo-box -->
+									
+			</div><!--/ conversation-container -->
+            <div class="type_messages">  
+             <div class="input-field">
+              <textarea placeholder="Type something &amp; press enter"></textarea>
+			  <ul class="imoji">
+			   <li><a href="#" class="kafe-btn kafe-btn-mint-small">Send</a></li>
+			  </ul><!--/ imoji -->
+             </div><!--/ input-field -->
+            </div><!--/ type_messages -->
+								
+           </div><!--main-conversation-box end-->
+		  </div><!--/ col-lg-8 -->
+		  
+		 </div><!--/ row -->
+		</div><!--/ messages-box -->	   		
+		
+	    </div><!-- /.col-md-9 -->	
+	        </div><!-- /.row -->
+	    </div><!-- /.container -->
+	</section>	 
+	 
+	 
+ <!-- ==============================================
+	 Footer Section
+	 =============================================== -->
+     <div class="footer">
+		<div class="container">
+		 <div class="row">
+		
+		  <div class="col-md-4 col-sm-6 text-left">
+		   <h4 class="heading no-margin">About Us</h4>
+		   <hr class="mint">
+		   <p>CodeNcake.</p>
+		   <p>We work hard to build a great product that is beautifully designed, simple to use, user friendly with great focus on user experience and customer service.</p>
+		  </div>
+		 
+		  <div class="col-md-2 col-sm-6 text-left">
+		   <h4 class="heading no-margin">Company</h4>
+		   <hr class="mint">
+		   <div class ="no-padding">
+			<a href="/index">Home</a>
+			<a href="/about">About</a>
+			<a href="/jobs">Jobs</a>
+			<a href="/services">Developers</a>
+			<a href="/how-1">How it works</a>
+			<a href="/contact">Contact</a>		 
+		   </div>
+		  </div><!-- /.col-md-2 -->	
+		  
+		  <div class="col-md-3 col-sm-6 text-left">
+		   <h4 class="heading no-margin">Other Services</h4>
+		   <hr class="mint">
+		   <div class="no-padding">
+			<a href="/#">Privacy Policy</a>
+			<a href="/#">Terms of Use</a>
+			<a href="/faq">FAQ</a>		 
+		   </div>
+		  </div><!-- /.col-md-3 -->	
+		  
+		  <div class="col-md-3 col-sm-6 text-left">
+		  <h4 class="heading no-margin">Browse</h4>
+		  <hr class="mint">
+		   </div><!-- /.col-md-3 -->
+		   
+		  </div><!-- /.row -->
+		 <div class="clearfix"></div>
+		</div><!-- /.container-->
+	   </div><!-- /.footer -->			
+	   
+	   <!-- ==============================================
+	   Made Section
+	   =============================================== -->
+	   <section class="made">
+		<div class="container">
+		 <div class="row">
+		  <div class="col-lg-10 col-lg-offset-1 text-center">
+		   <h4 class="made-with-love">CodeNCake</h4>
+		  </div>
+		  <!-- /.col-lg-10 -->
+		 </div><!-- /.row -->
+		</div><!-- /.container -->
+	   </section><!-- /.made -->
+	   
+	   <!-- ==============================================
+	   Bottom Footer Section
+	   =============================================== -->	
+	   <footer id="main-footer" class="main-footer">
+		<div class="container">
+		 <div class="row">
+		 
+		  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+		   <ul class="social-links">
+			<li class="revealOnScroll" data-animation="slideInLeft" data-timeout="800"><a href="/#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+			<li class="revealOnScroll" data-animation="slideInLeft" data-timeout="600"><a href="/#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+			<li class="revealOnScroll" data-animation="slideInLeft" data-timeout="400"><a href="/#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
+			<li class="revealOnScroll" data-animation="slideInLeft" data-timeout="200"><a href="/#link"><i class="fa fa-pinterest fa-fw"></i></a></li>
+			<li class="revealOnScroll" data-animation="slideInLeft"><a href="/#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+		   </ul>
+		  </div>
+		  <!-- /.col-sm-4 -->
+		  
+		  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 revealOnScroll" data-animation="bounceIn" data-timeout="200">
+		   <div class="img-responsive text-center">
+			<i class="fa fa-coffee logo"></i>		 </div><!-- End image-->
+		  </div>
+		  <!-- /.col-sm-4 -->
+		  
+		  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-right revealOnScroll" data-animation="slideInRight" data-timeout="200">
+		   <p>&copy;2016 The CodeNCake</p>
+		  </div>
+		  <!-- /.col-sm-4 -->
+				  
+		 </div><!-- /.row -->
+		</div><!-- /.container -->
+	   </footer><!-- /.footer -->  
+	   
+	   <a id="scrollup">Scroll</a>
+     
+
+	 <!-- ==============================================
+	 Scripts
+	 =============================================== -->
+     <script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/kafe.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<%- include('../partials/header.ejs') %>
+     <!-- ==============================================
+	 Header
+	 =============================================== -->	 
+	 <header class="header-blogpage">
+      <div class="container">
+	   <div class="content">
+       <div class="row">
+		 <h3 class="revealOnScroll" data-animation="slideInRight" data-timeout="200"><%= blogs.title %></h3>
+       </div><!-- /.row -->
+      </div><!-- /.content -->
+	  </div><!-- /.container -->
+     </header><!-- /header -->
+	 
+     <!-- ==============================================
+     Blog Page Section
+     =============================================== -->
+     <section class="blogpage jobpost" id="blogpage">
+	  <div class="container text-left">
+	   <div class="row">
+		<div class="col-lg-8 col-lg-offset-2 white-blogpage">
+
+		  <h4><%= blogs.title %></h4>
+		  <hr class="small-hr">
+		  <% if(currentUser && currentUser.id == blogs.userid){ %>
+			<a class="btn btn-danger" href="/blog/<%= blogs.blogID %>/delete">Delete</a>
+		  <% }	%> 
+		  
+		 <div class="row post-top-sec animations fade-down d2">
+		  <div class="col-lg-3">
+		   <h5> Posted </h5>
+		   <p><%= new Date(blogs.timestamp).getDate() %>/<%= new Date(blogs.timestamp).getMonth()+1 %>/<%= new Date(blogs.timestamp).getYear()+1900 %></p>
+		  </div><!-- /.col-lg-3 -->
+		  <div class="col-lg-3">
+		   <h5> Read Time </h5>
+		   <p><i class="fa fa-align-left"></i> 2 Min Read</p>
+		  </div><!-- /.col-lg-3 -->
+		  
+		  <div class="col-lg-12">
+           <hr class="small-hr">
+		  </div> <!-- /.col-lg-12 -->
+		 </div><!-- /.row -->
+		  <p><%= blogs.content %></p>	  
+		  <p>Lorem ipsum dolor sit amet, lorem quaestio similique has at, possit vivendum ne nam. Unum saepe ea vim, ius sensibus volutpat et, eum legere nostrum explicari ei. Sed ex legere hendrerit. Ei saperet officiis has, eu usu prompta mandamus. Vix dicat electram ei, ne sea aeterno ornatus perpetua, ne cum omnis voluptua iracundia.</p>
+		  <p>Pro munere assueverit id, debitis scaevola omittantur vim ex, qui meis tantas et. Vivendo ponderum id pro. Vidit offendit quaerendum est et, no eos prima tamquam, eu duo ludus noster praesent. Sea cu quod illum. Affert munere ut vis, ponderum gubergren sit ne. Nam at magna homero feugait.</p>
+		  <blockquote>
+		  Odio laoreet vivendum ex vis. At mentitum assueverit nam, mel ex dolorem tacimates praesent. Saepe nemore duo te, no nec cetero eligendi mnesarchum. Ne congue similique eloquentiam has. Wisi omittantur definitiones vis in. Pro munere assueverit id, debitis scaevola omittantur vim ex, qui meis tantas et. Vivendo ponderum id pro. Vidit offendit quaerendum est et, no eos prima tamquam, eu duo ludus noster praesent. Sea cu quod illum. Affert munere ut vis, ponderum gubergren sit ne. Nam at magna homero feugait.
+		  </blockquote>
+		  
+		  <h4>Good design goes to heaven, bad design goes everywhere.</h4><br/>
+		  <p><img src="<%= blogs.image %>" class="img-responsive" alt="" /></p>
+		  <p>Odio laoreet vivendum ex vis. At mentitum assueverit nam, mel ex dolorem tacimates praesent. Saepe nemore duo te, no nec cetero eligendi mnesarchum. Ne congue similique eloquentiam has. Wisi omittantur definitiones vis in.</p>
+		  <p>Pertinacia neglegentur vix ne. Illum accusata id quo, vis ex mucius iisque aliquid. Eos meliore interesset id. Ne has fabellas elaboraret.</p>
+		  <p>Ne iriure reprimique vel. Ex alii pericula pri, idque veritus ius id. Etiam doctus aperiam cu mea, vel cibo dicunt ad, vim luptatum delicatissimi eu. Diam mentitum explicari no vim, tantas nominavi eos in. Ei pri omnis verterem antiopam.</p>
+		  
+		</div><!-- /.col-lg-8 -->
+	   </div><!-- /.row -->
+	  </div><!-- /.container -->
+	 </section><!-- /section -->
+	 	 
+      <!-- ==============================================
+	 Footer Section
+	 =============================================== -->
+     <div class="footer">
+		<div class="container">
+		 <div class="row">
+		
+		  <div class="col-md-4 col-sm-6 text-left">
+		   <h4 class="heading no-margin">About Us</h4>
+		   <hr class="mint">
+		   <p>CodeNcake.</p>
+		   <p>We work hard to build a great product that is beautifully designed, simple to use, user friendly with great focus on user experience and customer service.</p>
+		  </div>
+		 
+		  <div class="col-md-2 col-sm-6 text-left">
+		   <h4 class="heading no-margin">Company</h4>
+		   <hr class="mint">
+		   <div class ="no-padding">
+			<a href="/index">Home</a>
+			<a href="/about">About</a>
+			<a href="/jobs">Jobs</a>
+			<a href="/services">Developers</a>
+			<a href="/how-1">How it works</a>
+			<a href="/contact">Contact</a>		 
+		   </div>
+		  </div><!-- /.col-md-2 -->	
+		  
+		  <div class="col-md-3 col-sm-6 text-left">
+		   <h4 class="heading no-margin">Other Services</h4>
+		   <hr class="mint">
+		   <div class="no-padding">
+			<a href="/#">Privacy Policy</a>
+			<a href="/#">Terms of Use</a>
+			<a href="/faq">FAQ</a>		 
+		   </div>
+		  </div><!-- /.col-md-3 -->	
+		  
+		  <div class="col-md-3 col-sm-6 text-left">
+		  <h4 class="heading no-margin">Browse</h4>
+		  <hr class="mint">
+		   </div><!-- /.col-md-3 -->
+		   
+		  </div><!-- /.row -->
+		 <div class="clearfix"></div>
+		</div><!-- /.container-->
+	   </div><!-- /.footer -->			
+	   
+	   <!-- ==============================================
+	   Made Section
+	   =============================================== -->
+	   <section class="made">
+		<div class="container">
+		 <div class="row">
+		  <div class="col-lg-10 col-lg-offset-1 text-center">
+		   <h4 class="made-with-love">CodeNCake</h4>
+		  </div>
+		  <!-- /.col-lg-10 -->
+		 </div><!-- /.row -->
+		</div><!-- /.container -->
+	   </section><!-- /.made -->
+	   
+	   <!-- ==============================================
+	   Bottom Footer Section
+	   =============================================== -->	
+	   <footer id="main-footer" class="main-footer">
+		<div class="container">
+		 <div class="row">
+		 
+		  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+		   <ul class="social-links">
+			<li class="revealOnScroll" data-animation="slideInLeft" data-timeout="800"><a href="/#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+			<li class="revealOnScroll" data-animation="slideInLeft" data-timeout="600"><a href="/#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+			<li class="revealOnScroll" data-animation="slideInLeft" data-timeout="400"><a href="/#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
+			<li class="revealOnScroll" data-animation="slideInLeft" data-timeout="200"><a href="/#link"><i class="fa fa-pinterest fa-fw"></i></a></li>
+			<li class="revealOnScroll" data-animation="slideInLeft"><a href="/#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+		   </ul>
+		  </div>
+		  <!-- /.col-sm-4 -->
+		  
+		  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 revealOnScroll" data-animation="bounceIn" data-timeout="200">
+		   <div class="img-responsive text-center">
+			<i class="fa fa-coffee logo"></i>		 </div><!-- End image-->
+		  </div>
+		  <!-- /.col-sm-4 -->
+		  
+		  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-right revealOnScroll" data-animation="slideInRight" data-timeout="200">
+		   <p>&copy;2016 The CodeNCake</p>
+		  </div>
+		  <!-- /.col-sm-4 -->
+				  
+		 </div><!-- /.row -->
+		</div><!-- /.container -->
+	   </footer><!-- /.footer -->  
+	   
+	   <a id="scrollup">Scroll</a>
+	 
+     <!-- ==============================================
+	 Scripts
+	 =============================================== -->
+	 
+     <!-- jQuery 2.1.4 -->
+     <script src="/js/jQuery-2.1.4.min.js"></script>
+     <!-- Bootstrap 3.3.6 JS -->
+     <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+     <!-- Waypoints JS -->
+     <script src="/js/waypoints.min.js" type="text/javascript"></script>
+     <!-- Kafe JS -->
+     <script src="/js/kafe.js" type="text/javascript"></script>
+
+</body>
+</html>

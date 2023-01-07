@@ -1,0 +1,203 @@
+<%- include('../partials/header.ejs') %>
+     <!-- ==============================================
+	 Header
+	 =============================================== -->	 
+	 <header class="header-blog">
+      <div class="container">
+	   <div class="content">
+        <div class="row">
+	     <h1 class="revealOnScroll" data-animation="fadeInDown"><i class="fa fa-coffee"></i> Blog</h1>
+		 <p>Keep up to date with the latest news.</p>
+        </div><!-- /.row -->
+       </div><!-- /.content -->
+	  </div><!-- /.container -->
+     </header><!-- /header -->
+	 
+     <!-- ==============================================
+     Banner Section
+     =============================================== -->
+	 <div class="blog-categories">
+	  <div class="container">
+		<a class="blog-title"><i class="fa fa-coffee"></i> Blogs</a>
+	    <ul>
+		 <li class="btn btn-secondary btn-lg">
+		  <a href="/blog/new">Add A Blog</a>
+		 </li>
+		</ul><!-- /ul.cat -->
+		
+	  </div><!-- /.container -->
+	 </div><!-- /.blog-categories -->
+	 
+     <!-- ==============================================
+     Blog Section
+     =============================================== -->	 
+     <section class="blog">
+	  <div class="container text-left">
+	   <div class="row mt">
+	    <div class="col-lg-12">
+		 <h3>Recent Posts</h3>
+		</div><!-- col-lg-12 -->
+		<div class="col-lg-8">
+		 <span>Our latests thoughts about things that only matters to us.</span>
+		</div><!-- col-lg-8-->
+		<div class="col-lg-4">
+		 <span class="pull-right-sm"><a href="#"><i class="fa fa-angle-right"></i> See All Posts</a></span>
+		</div>
+	   </div><!-- row -->
+		
+	   <div class="row">
+		<% blogs.forEach(function(blog){ %>
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 bb">
+		 <div class="panel">
+		  <a href="/blog/<%=blog.blogID %>" class="caption-link">
+		   <div class="caption">
+			<div class="caption-content">
+			 <i class="fa fa-angle-right fa-3x"></i>			</div><!-- /.caption -->
+		   </div><!-- /.caption-content -->
+		   <img class="img-responsive panel-img" src="<%= blog.image %>" alt="">		  </a>		 </div>
+		 <!-- /.panel --> 
+		 <a href="/blog/<%=blog.blogID %>" class="a-body"> 
+		 <div class="panel-body">
+		  <h4><%= blog.title %></h4>
+	  	   <p><%= blog.description %></p>
+		   <hr/>
+		   <ul class="bottom_data">
+		    <li><%= blog.username %></li>
+		   </ul><!-- /.bottom-data -->
+		   <ul class="bottom_data pull-right">
+		    <li><i class="fa fa-align-left"></i>5 Min Read</li>
+		   </ul><!-- /.bottom-data --> 
+		 </div>
+		 <!-- /.panel-body --> 
+		 </a> 
+		</div><!-- /.col-lg-4 -->
+		<% }); %>		
+	   </div><!-- row -->
+	   
+	   <div class="row">
+	   <div class="page text-center">
+		 <ul class="pagination">
+		  <li class="disabled"><a href="#">«</a></li>
+		  <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+		  <li><a href="#">2</a></li>
+		  <li><a href="#">3</a></li>
+		  <li><a href="#">4</a></li>
+		  <li><a href="#">5</a></li>
+		  <li><a href="#">»</a></li>
+		 </ul>
+	   </div><!-- /.page -->	   	   
+	   </div><!-- /.row -->
+	   
+	  </div><!-- container -->	 
+	 </section><!-- /.section -->	 
+	 
+     <!-- ==============================================
+	 Footer Section
+	 =============================================== -->
+     <div class="footer">
+		<div class="container">
+		 <div class="row">
+		
+		  <div class="col-md-4 col-sm-6 text-left">
+		   <h4 class="heading no-margin">About Us</h4>
+		   <hr class="mint">
+		   <p>CodeNcake.</p>
+		   <p>We work hard to build a great product that is beautifully designed, simple to use, user friendly with great focus on user experience and customer service.</p>
+		  </div>
+		 
+		  <div class="col-md-2 col-sm-6 text-left">
+		   <h4 class="heading no-margin">Company</h4>
+		   <hr class="mint">
+		   <div class ="no-padding">
+			<a href="/index">Home</a>
+			<a href="/about">About</a>
+			<a href="/jobs">Jobs</a>
+			<a href="/services">Developers</a>
+			<a href="/how-1">How it works</a>
+			<a href="/contact">Contact</a>		 
+		   </div>
+		  </div><!-- /.col-md-2 -->	
+		  
+		  <div class="col-md-3 col-sm-6 text-left">
+		   <h4 class="heading no-margin">Other Services</h4>
+		   <hr class="mint">
+		   <div class="no-padding">
+			<a href="/#">Privacy Policy</a>
+			<a href="/#">Terms of Use</a>
+			<a href="/faq">FAQ</a>		 
+		   </div>
+		  </div><!-- /.col-md-3 -->	
+		  
+		  <div class="col-md-3 col-sm-6 text-left">
+		  <h4 class="heading no-margin">Browse</h4>
+		  <hr class="mint">
+		   </div><!-- /.col-md-3 -->
+		   
+		  </div><!-- /.row -->
+		 <div class="clearfix"></div>
+		</div><!-- /.container-->
+	   </div><!-- /.footer -->			
+	   
+	   <!-- ==============================================
+	   Made Section
+	   =============================================== -->
+	   <section class="made">
+		<div class="container">
+		 <div class="row">
+		  <div class="col-lg-10 col-lg-offset-1 text-center">
+		   <h4 class="made-with-love">CodeNCake</h4>
+		  </div>
+		  <!-- /.col-lg-10 -->
+		 </div><!-- /.row -->
+		</div><!-- /.container -->
+	   </section><!-- /.made -->
+	   
+	   <!-- ==============================================
+	   Bottom Footer Section
+	   =============================================== -->	
+	   <footer id="main-footer" class="main-footer">
+		<div class="container">
+		 <div class="row">
+		 
+		  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+		   <ul class="social-links">
+			<li class="revealOnScroll" data-animation="slideInLeft" data-timeout="800"><a href="/#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+			<li class="revealOnScroll" data-animation="slideInLeft" data-timeout="600"><a href="/#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+			<li class="revealOnScroll" data-animation="slideInLeft" data-timeout="400"><a href="/#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
+			<li class="revealOnScroll" data-animation="slideInLeft" data-timeout="200"><a href="/#link"><i class="fa fa-pinterest fa-fw"></i></a></li>
+			<li class="revealOnScroll" data-animation="slideInLeft"><a href="/#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+		   </ul>
+		  </div>
+		  <!-- /.col-sm-4 -->
+		  
+		  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 revealOnScroll" data-animation="bounceIn" data-timeout="200">
+		   <div class="img-responsive text-center">
+			<i class="fa fa-coffee logo"></i>		 </div><!-- End image-->
+		  </div>
+		  <!-- /.col-sm-4 -->
+		  
+		  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-right revealOnScroll" data-animation="slideInRight" data-timeout="200">
+		   <p>&copy;2016 The CodeNCake</p>
+		  </div>
+		  <!-- /.col-sm-4 -->
+				  
+		 </div><!-- /.row -->
+		</div><!-- /.container -->
+	   </footer><!-- /.footer -->  
+	   
+	   <a id="scrollup">Scroll</a>
+     <!-- ==============================================
+	 Scripts
+	 =============================================== -->
+	 
+     <!-- jQuery 2.1.4 -->
+     <script src="/js/jQuery-2.1.4.min.js"></script>
+     <!-- Bootstrap 3.3.6 JS -->
+     <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+     <!-- Waypoints JS -->
+     <script src="/js/waypoints.min.js" type="text/javascript"></script>
+     <!-- Kafe JS -->
+     <script src="/js/kafe.js" type="text/javascript"></script>
+
+</body>
+</html>
